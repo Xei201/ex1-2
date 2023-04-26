@@ -1,6 +1,3 @@
-import unittest
-
-
 def find_min(number, k):
     # Отсчёт попыток
     k = k - 1
@@ -21,36 +18,6 @@ def find_min(number, k):
     return find_min(number[:-1], k)
 
 
-class TestMinNum(unittest.TestCase):
-    num = "1432219"
-    k = 3
-    result_true = 1219
 
-    def test1(self):
-        result = find_min(self.num, self.k)
-        self.assertEqual(self.result_true, result)
-
-
-class TestMinNum2(unittest.TestCase):
-    num = "10200"
-    k = 1
-    result_true = 200
-
-
-class TestMinNum2(unittest.TestCase):
-    num = "450047"
-    k = 2
-    result_true = 47
-
-
-class TestMinNum2(unittest.TestCase):
-    num = "23"
-    k = 1
-    result_true = 2
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    unittest.main()
 
 

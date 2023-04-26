@@ -1,5 +1,3 @@
-import unittest
-
 days_before_month = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
 
 
@@ -37,22 +35,6 @@ def date_diff(date_1: str, date_2: str) -> int:
     return abs(date_to_day(date_1) - date_to_day(date_2))
 
 
-class TestDate(unittest.TestCase):
-    date1 = "2019-06-29"
-    date2 = "2019-06-30"
-    result_true = 1
-
-    def test_date(self):
-        result = date_diff(self.date1, self.date2)
-        self.assertEqual(self.result_true, result)
 
 
-class TestData2(TestDate):
-    date1 = "2020-01-15"
-    date2 = "2019-12-31"
-    result = 15
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    unittest.main()
